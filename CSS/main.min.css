@@ -938,6 +938,7 @@ body {
 }
 .footer-newsletter {
   width: 100%;
+  margin: 0;
 }
 @media screen and (min-width: 1199px) {
   .footer-newsletter {
@@ -954,10 +955,10 @@ body {
   }
 }
 .newsletter-form {
-  margin: 0 auto;
+  margin: 0;
 }
 .newsletter-form__label {
-  display: block;
+  display: flex;
   text-transform: uppercase;
   font-family: var(--main-font-family);
   font-size: 14px;
@@ -1008,7 +1009,7 @@ body {
   }
 }
 .newsletter-form__input {
-  width: 100%;
+  width: 358px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -1205,8 +1206,9 @@ body {
   margin-bottom: 12px;
 }
 .modal-form__label {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
 }
 .modal-form_field {
   position: relative;
