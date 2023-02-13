@@ -1,0 +1,40 @@
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+    width: calc(100% / 2 - 30px);
+    @include tablet {
+      width: calc(100% / 3 - 30px);
+    }
+    @include desktop {
+      width: calc(100% / 6 - 30px);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border var(--transition-standard);
+  }
+  &__icon {
+    fill: #afb1b8;
+    transition: fill var(--transition-standard);
+  }
+  &__link:hover .customers__icon,
+  &__link:focus .customers__icon {
+    fill: var(--accent-color);
+  }
+  &__link:hover,
+  &__ink:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+  }
+}
