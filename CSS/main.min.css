@@ -868,10 +868,12 @@ body {
 }
 .joinus {
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1199px) {
   .joinus {
     margin-right: 78px;
+    margin-top: 0px;
   }
 }
 .joinus__title {
