@@ -1653,7 +1653,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 32px;
-  padding: 48px 40px 48px 40px;
+  padding-left: 40px;
 }
 .menu-container__nav-link {
   color: var(--header-text-color);
