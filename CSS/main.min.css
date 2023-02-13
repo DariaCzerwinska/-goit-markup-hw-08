@@ -443,6 +443,7 @@ body {
       url(/goit-markup-hw-08/images/hero/hero-background-3x.jpg);
   }
 }
+
 .hero__title {
   font-style: normal;
   font-weight: 900;
@@ -1325,18 +1326,24 @@ body {
   );
 }
 .checkbox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 11px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 20px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .checkbox__content {
@@ -1371,8 +1378,9 @@ body {
 }
 .checkbox__icon {
   position: absolute;
-  top: 6px;
-  left: -17px;
+  left: -218px;
+  top: 5px;
+  z-index: 400;
   fill: var(--secondary-text-color);
 }
 .checkbox__link {
